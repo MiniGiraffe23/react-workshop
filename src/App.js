@@ -19,10 +19,12 @@ class App extends Component {
     this.state = {currentPage: 'Home'};
   }
 
-  navHandler() {
-    console.log(this.state.currentPage);
-    this.setState({currentPage: 'About'});
-    console.log(this.state.currentPage);
+  navHandler(e) {
+    this.setState(
+      {
+      currentPage: e.target.innerText,
+    });
+
   }
   render() {
     return (
