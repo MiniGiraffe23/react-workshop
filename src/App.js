@@ -16,13 +16,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.navHandler = this.navHandler.bind(this);
-    this.currentPage = 'Home';
+    this.state = {currentPage: 'Home'};
   }
 
   navHandler() {
-    console.log(this.currentPage);
-    this.currentPage = 'About';
-    console.log(this.currentPage);
+    console.log(this.state.currentPage);
+    this.setState({currentPage: 'About'});
+    console.log(this.state.currentPage);
   }
   render() {
     return (
@@ -36,7 +36,7 @@ class App extends Component {
             <ProfileCard />
           </div>
           <div className='col-md-8'>
-            <Content page={this.currentPage}/>
+            <Content page={this.state.currentPage}/>
           </div>
         </div>
         <div className='container-fluid top-padding'>
