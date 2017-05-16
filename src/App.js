@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './containers/Navbar'
 import ProfileCard from './components/ProfileCard'
 import Content from './components/Content'
+import Footer from './components/Footer'
 
 // 1) Page
 // 5) Content
@@ -25,6 +26,11 @@ class App extends Component {
           </div>
           <div className='col-md-8'>
             <Content />
+          </div>
+        </div>
+        <div className='container-fluid top-padding'>
+          <div className='footer'>
+            <Footer />
           </div>
         </div>
       </div>
