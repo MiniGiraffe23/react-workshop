@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './containers/Navbar'
 import ProfileCard from './components/ProfileCard'
 import Content from './components/Content'
+import profilePic from './profile-pic.jpg';
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,11 @@ class App extends Component {
       showContent: "home",
     }
     this.switchContent = this.switchContent.bind(this);
+  }
+  componentWillMount() {
+
+    // document.body.append(`<img src="../profile-pic.jpg" />`);
+    // setTimeout(function() {}, 5000);
   }
 
   switchContent(id) {
