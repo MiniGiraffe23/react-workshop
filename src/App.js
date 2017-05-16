@@ -14,13 +14,21 @@ import Footer from './components/Footer'
 
 class App extends Component {
   constructor(props) {
+    super(props);
+    this.navHandler = this.navHandler.bind(this);
+    this.currentPage = 'Home';
+  }
 
+  navHandler() {
+    console.log(this.currentPage);
+    this.currentPage = 'About';
+    console.log(this.currentPage);
   }
   render() {
     return (
       <div className="App">
 
-        <Navbar onClick={}/>
+        <Navbar onClick={this.navHandler}/>
 
       <div className='page'>
         <div className='container-fluid top-padding'>
@@ -28,7 +36,7 @@ class App extends Component {
             <ProfileCard />
           </div>
           <div className='col-md-8'>
-            <Content />
+            <Content page={this.currentPage}/>
           </div>
         </div>
         <div className='container-fluid top-padding'>
