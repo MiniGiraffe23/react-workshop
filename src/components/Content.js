@@ -21,7 +21,7 @@ class Content extends Component {
       }
     else if (this.props.page === 'About') {
       return(<div>
-        <p>About Page</p>
+        <h1>About Page</h1>
       </div>)
     }
     else if (this.props.page === 'Contact') {

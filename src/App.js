@@ -16,7 +16,19 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.navHandler = this.navHandler.bind(this);
-    this.state = {currentPage: 'Home'};
+    this.state = {currentPage: 'Home', loading: false};
+  }
+
+  componentWillMount() {
+    this.setState({
+      loading: true,
+    });
+  }
+
+  componentDidMount(){
+    this.setState({
+      loading: false,
+    });
   }
 
   navHandler(e) {
@@ -25,6 +37,9 @@ class App extends Component {
     });
   }
   render() {
+    if (this.state.loading) {
+      console.log('loading');
+    } else {console.log('not loading');}
     return (
       <div className="App">
         <Navbar onClick={this.navHandler}/>
