@@ -4,11 +4,8 @@ class Footer extends Component {
   render() {
     return(<div>
       <footer>
-      <span>
-        A purpose of human life, no matter who is controlling it, is to love whoever is around to be loved. - Kurt Vonnegut,
-        </span>
-        <span className='italics'>
-           Some Book
+      <span className='quote'>
+       Laughter and tears are both responses to frustration and exhaustion. I myself prefer to laugh, since there is less cleaning do to do afterward. - Kurt Vonnegut
         </span>
       </footer>
     </div>)

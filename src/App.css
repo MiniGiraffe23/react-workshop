@@ -31,8 +31,9 @@
   opacity: 0;
 }
 
-.italics {
+.quote {
   font-style: italic;
+  font-size: 1.2em;
 }
 
 .bold {
