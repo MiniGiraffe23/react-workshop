@@ -1,9 +1,14 @@
 import React, {Component} from 'react'
+import profilePic from '../profile-pic.jpg';
 
 class ProfileCard extends Component {
   render(){
     return(<div>
-      Hi, I'm where the profile card goes
+      <img src={profilePic} className="App-profile-pic" alt={this.props.name} />
+        <div>
+          <p className="name">{this.props.name}</p>
+          <p>We like going down rabbit holes!</p>
+        </div>
       </div>)
   }
 }

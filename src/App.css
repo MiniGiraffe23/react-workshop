@@ -83,3 +83,15 @@
   transition: .5s;
   font-size: 25px;
 }
+
+.App-profile-pic {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.2em;
+}
