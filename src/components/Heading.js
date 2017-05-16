@@ -7,9 +7,9 @@ class Heading extends Component {
       <h1>
         {this.props.mainHeader}
       </h1>
-      <h5>
+      <p>
         {this.props.subHeader}
-      </h5>
+      </p>
       </div>
 
       )

@@ -5,7 +5,7 @@ import headshot from '../images/headshot.jpg'
 class ProfileCard extends Component {
   render(){
     return(<div className='profile-card'>
-      <img src={headshot} className="App-logo" alt="Joe LeBeau" />
+      <img src={headshot} className="headshot" alt="Joe LeBeau" />
       <Heading mainHeader='Joe LeBeau' subHeader='Chicago-based developer with a passion for building meaningful things and connecting people'/>
     </div>)
   }

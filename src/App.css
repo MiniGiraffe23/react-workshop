@@ -7,6 +7,12 @@
   height: 120px;
 }
 
+.headshot {
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
 .App-header {
   background-color: black;
   height: 220px;
