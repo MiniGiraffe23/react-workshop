@@ -13,11 +13,14 @@ import Footer from './components/Footer'
 // 9) Paragraph
 
 class App extends Component {
+  constructor(props) {
+
+  }
   render() {
     return (
       <div className="App">
 
-        <Navbar />
+        <Navbar onClick={}/>
 
       <div className='page'>
         <div className='container-fluid top-padding'>
