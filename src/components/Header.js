@@ -2,7 +2,11 @@ import React, {Component} from 'react'
 
 class Header extends Component {
   render(){
-    return(<h1>Header - Test</h1>)
+    return( <div>
+              <h1>{this.props.title}</h1>
+              <p>{this.props.subtitle}</p>
+            </div>
+      )
   }
 }
 

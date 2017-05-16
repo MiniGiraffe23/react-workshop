@@ -83,3 +83,25 @@
   transition: .5s;
   font-size: 25px;
 }
+
+.question {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.answer {
+  list-style-type: none;
+}
+
+.info-list {
+  margin-top: 50px;
+}
+
+.bio {
+  margin-top: 30px;
+}
+
+.quote {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
