@@ -1,9 +1,10 @@
 import React, {Component} from 'react'
+import Heading from './Heading'
 
 class Content extends Component {
   render(){
     return(<div>
-      and I'm your main content
+      <Heading mainHeader='Home' subHeader="Hi, I'm Joe. Web Developer, live music enthusiast, and lifelong learner" />
       </div>)
   }
 }
