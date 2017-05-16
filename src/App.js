@@ -5,6 +5,12 @@ import Navbar from './containers/Navbar'
 import ProfileCard from './components/ProfileCard'
 import Content from './components/Content'
 
+// 1) Page
+// 5) Content
+// 6) Footer
+// 7) Profile Card
+// 9) Paragraph
+
 class App extends Component {
   render() {
     return (
