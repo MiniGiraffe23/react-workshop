@@ -3,9 +3,8 @@ import Heading from './Heading'
 
 class Content extends Component {
   render(){
-    let pageContent = null;
     if (this.props.page === 'Home') {
-      pageContent = <div>
+      return(<div>
         <Heading mainHeader='Home' subHeader="Hi, I'm Joe. Web Developer, live music enthusiast, and lifelong learner" />
         <br/>
         <div className='FAQ' >
@@ -19,16 +18,13 @@ class Content extends Component {
               <br/>
 
         <p>This is the body paragraph of my content component. Once this app is actually functional, there will be actual info about me here instead of this placeholder. This is the body paragraph of my content component. Once this app is actually functional, there will be actual info about me here instead of this placeholder. This is the body paragraph of my content component. Once this app is actually functional, there will be actual info about me here instead of this placeholder.</p>
-        </div>;
+        </div>)
       }
     else if (this.props.page === 'About') {
-    pageContent = <div>
+      return(<div>
         <p>About Page</p>
-      </div>;
+      </div>)
     }
-    return (<div>
-      {pageContent}
-    </div>);
   }
 }
 
