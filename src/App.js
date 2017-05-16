@@ -11,13 +11,16 @@ class App extends Component {
     super(props);
     this.state = {
       showContent: "home",
+      loadingDone: false,
     }
     this.switchContent = this.switchContent.bind(this);
   }
-  componentWillMount() {
-
-    // document.body.append(`<img src="../profile-pic.jpg" />`);
-    // setTimeout(function() {}, 5000);
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        loadingDone: true,
+      })
+    }, 2000);
   }
 
   switchContent(id) {
@@ -27,24 +30,28 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div className="App">
+    if (this.state.loadingDone) {
+      return (
+        <div className="App">
 
-        <Navbar onClick={this.switchContent}/>
+          <Navbar onClick={this.switchContent}/>
 
-      <div className='page'>
-        <div className='container-fluid top-padding'>
-          <div className='col-md-2'>
-            <ProfileCard name="Tove and Simon, as a prairie dog"/>
-          </div>
-          <div className='col-md-8'>
-            <Content title={this.state.showContent} showContent={this.state.showContent} />
+        <div className='page'>
+          <div className='container-fluid top-padding'>
+            <div className='col-md-2'>
+              <ProfileCard name="Tove and Simon, as a prairie dog"/>
+            </div>
+            <div className='col-md-8'>
+              <Content title={this.state.showContent} showContent={this.state.showContent} />
+            </div>
           </div>
         </div>
-      </div>
 
-      </div>
-    );
+        </div>
+      );
+    } else {
+      return (<img src={profilePic} className="App-profile-pic" />)
+    }
   }
 }
 
