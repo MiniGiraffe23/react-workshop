@@ -20,18 +20,14 @@ class App extends Component {
   }
 
   navHandler(e) {
-    this.setState(
-      {
+    this.setState({
       currentPage: e.target.innerText,
     });
-
   }
   render() {
     return (
       <div className="App">
-
         <Navbar onClick={this.navHandler}/>
-
       <div className='page'>
         <div className='container-fluid top-padding'>
           <div className='col-md-2'>
