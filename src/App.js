@@ -7,12 +7,16 @@ import Content from './components/Content'
 
 class App extends Component {
   constructor(props) {
-    super(props)
-    this.contentTitle = "Home"
+    super(props);
+    this.state = {
+      showContent: "home",
+    }
+    this.switchContent = this.switchContent.bind(this);
   }
-  switchContent() {
+
+  switchContent(id) {
     this.setState(() => ({
-      contentTitle: "switched"
+      showContent: id,
     }));
   }
 
@@ -28,7 +32,7 @@ class App extends Component {
             <ProfileCard name="Tove and Simon, as a prairie dog"/>
           </div>
           <div className='col-md-8'>
-            <Content title={this.contentTitle} />
+            <Content title={this.state.showContent} showContent={this.state.showContent} />
           </div>
         </div>
       </div>
