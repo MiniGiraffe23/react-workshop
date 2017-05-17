@@ -6,15 +6,15 @@ import Contact from './Contact.js';
 
 class Content extends Component {
   render(){
-    if (this.props.page === "Home") {
+    if (this.props.page === "home") {
       return( <div>
               <Home />
             </div>)
-    } else if (this.props.page === "About") {
+    } else if (this.props.page === "about") {
       return( <div>
               <About />
             </div>)
-    } else if (this.props.page === "Contact") {
+    } else if (this.props.page === "contact") {
       return( <div>
               <Contact />
             </div>)

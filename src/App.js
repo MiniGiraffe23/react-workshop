@@ -8,25 +8,15 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      page: "Home",
+      page: "home",
     };
     this.handleClick = this.handleClick.bind(this);
   };
 
-  handleClick(page) {
-    if (page === "home") {
-      this.setState({
-        page: "Home"
+  handleClick(event) {
+    this.setState({
+        page: event.target.id
       });
-    } else if (page === "about") {
-        this.setState({
-        page: "About"
-      });
-    } else if (page === "contact") {
-        this.setState({
-        page: "Contact"
-      });
-    };
   };
 
   render() {
