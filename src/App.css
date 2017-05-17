@@ -94,7 +94,7 @@
 }
 
 .info-list {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .bio {
@@ -104,4 +104,8 @@
 .quote {
   margin-top: 20px;
   font-size: 1.2em;
+}
+
+.prof-pic {
+  height: 160px;
 }

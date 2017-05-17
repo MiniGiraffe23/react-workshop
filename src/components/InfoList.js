@@ -8,8 +8,6 @@ class InfoList extends Component {
                 <li className="answer">{this.props.answer_1}</li>
                 <li className="question">What am I working on?</li>
                 <li className="answer">{this.props.answer_2}</li>
-                <li className="question">What is my favorite restaurant?</li>
-                <li className="answer">{this.props.answer_3}</li>
               </ul>
             </div>
       )
