@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 
-class ContentContent extends Component {
+class HomeContent extends Component {
   render(){
     return(<div>
       <div className="Questions">
         <strong>This might be a question?</strong>
-        <p>This is the contenet part?</p>
+        <p>This is the content part?</p>
       </div>
       <div>
         <p>This is a paragraph about things.</p>
@@ -14,4 +14,4 @@ class ContentContent extends Component {
   }
 }
 
-export default ContentContent;
+export default HomeContent;

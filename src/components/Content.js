@@ -1,21 +1,41 @@
 import React, {Component} from 'react'
-import ContentContent from './ContentContent'
+import HomeContent from './HomeContent'
+import AboutContent from './AboutContent'
+import ContactContent from './ContactContent'
 
 class Content extends Component {
+
   render(){
-    return( <div>
+
+
+//So I recognize that if I'ma do this, I might as well shove literally everything into a content component, but w/e.
+    if (this.props.state === "home") {
+      return( <div>
+        <div>
+          <h1>Home</h1>
+          <p>A subtitle</p>
+        </div>
+        <div>
+          <HomeContent />
+        </div>
+        <div className="quote">
+          <p>Quote - <span>Person</span> <em>Book</em></p>
+        </div>
+        </div>
+        ) 
+  } else if (this.props.state === "about"){
+    return( 
+        <AboutContent />
+     ) 
+  }else if (this.props.state === "contact"){
+    return ( <ContactContent />)
+  } else {
+    return (
       <div>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.subtitle}</p>
-      </div>
-      <div>
-        <ContentContent />
-      </div>
-      <div className="quote">
-        <p>Quote - <span>Person</span> <em>Book</em></p>
-      </div>
+          <h1>Oh no.</h1>
       </div>
       )
+  }
   }
 }
 
